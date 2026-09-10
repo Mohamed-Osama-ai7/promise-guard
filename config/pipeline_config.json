@@ -1,0 +1,34 @@
+{
+    "promise_detection": {
+        "method": "TF-IDF + Logistic Regression",
+        "vectorizer": "promise_tfidf_vectorizer.joblib",
+        "model": "promise_classifier.joblib"
+    },
+    "information_extraction": {
+        "action_extraction": "vocabulary matching",
+        "amount_extraction": "regex",
+        "deadline_extraction": "regex + normalization"
+    },
+    "sentiment": {
+        "model": "cardiffnlp/twitter-roberta-base-sentiment-latest"
+    },
+    "promise_tracking": {
+        "similarity_model": "all-MiniLM-L6-v2",
+        "similarity_threshold": 0.45
+    },
+    "risk_model": {
+        "model": "promiseguard_risk_model.joblib",
+        "features": [
+            "account_mrr",
+            "historical_churn_risk",
+            "avg_sentiment_score",
+            "total_promises",
+            "broken_promises",
+            "fulfilled_promises",
+            "overdue_promises",
+            "broken_promise_rate",
+            "overdue_rate",
+            "message_count"
+        ]
+    }
+}

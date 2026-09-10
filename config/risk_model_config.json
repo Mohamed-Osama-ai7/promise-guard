@@ -1,0 +1,18 @@
+{
+    "features": [
+        "account_mrr",
+        "historical_churn_risk",
+        "avg_sentiment_score",
+        "total_promises",
+        "broken_promises",
+        "fulfilled_promises",
+        "overdue_promises",
+        "broken_promise_rate",
+        "overdue_rate",
+        "message_count"
+    ],
+    "model": "RandomForestClassifier",
+    "n_estimators": 200,
+    "max_depth": 8,
+    "random_state": 42
+}

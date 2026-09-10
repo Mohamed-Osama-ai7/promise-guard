@@ -1,0 +1,31 @@
+{
+    "action_vocabulary": [
+        "arrange a replacement unit",
+        "ask our security team to verify the login",
+        "attach the requested export",
+        "call you with the outcome",
+        "check the delivery scan",
+        "confirm the cancellation details",
+        "coordinate the refund review",
+        "raise this with the engineering queue",
+        "restore the missing entitlement",
+        "review the account history",
+        "send a written explanation",
+        "send the corrected invoice",
+        "share the diagnostic notes",
+        "trace the failed payment",
+        "update the access settings"
+    ],
+    "amount_pattern": "\n    (?:\n        \\$\\s?[\\d,]+(?:\\.\\d{1,2})?\n        |\n        [\\d,]+(?:\\.\\d{1,2})?\\s?(?:usd|dollars?)\n    )\n    ",
+    "relative_deadline_patterns": [
+        "\\btoday\\b",
+        "\\btomorrow\\b",
+        "\\byesterday\\b",
+        "\\btonight\\b",
+        "\\bthis week\\b",
+        "\\bnext week\\b",
+        "\\bwithin \\d+ (?:hour|hours|day|days)\\b",
+        "\\bin \\d+ (?:hour|hours|day|days)\\b",
+        "\\bby \\d{1,2}(?::\\d{2})?\\s?(?:am|pm)?\\b"
+    ]
+}

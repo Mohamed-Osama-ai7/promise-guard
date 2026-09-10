@@ -1,0 +1,26 @@
+{
+    "similarity_model": "all-MiniLM-L6-v2",
+    "similarity_threshold": 0.45,
+    "fulfillment_patterns": [
+        "\\bcompleted\\b",
+        "\\bdone\\b",
+        "\\bfinished\\b",
+        "\\bsent\\b",
+        "\\bprocessed\\b",
+        "\\bresolved\\b",
+        "\\bfixed\\b",
+        "\\bdelivered\\b",
+        "\\brefunded\\b",
+        "\\bissued\\b",
+        "\\bupdated\\b",
+        "\\bconfirmed\\b",
+        "\\bcompleted successfully\\b",
+        "\\bhas been sent\\b",
+        "\\bhas been processed\\b",
+        "\\bhas been resolved\\b"
+    ],
+    "logic": {
+        "overdue_without_fulfillment": "potentially_broken",
+        "overdue_with_fulfillment": "fulfilled"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "model_name": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+    "task": "sentiment-analysis",
+    "input_column": "message_text",
+    "output_label_column": "predicted_sentiment",
+    "output_score_column": "sentiment_score"
+}
